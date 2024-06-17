@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body class="light-theme">
+    <nav class="navbar">
+         <h1>SGE</h1>
+        <div class="button-bar">
+            <button><a href="/prato/form">Cadastrar prato</a></button>
+            <button><a href="/logout">Sair</a></button>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </nav>
+
+    <p>Seja bem vindo(a), <%= nome %>!</p>
+
+    <table class="table container">
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Preco</th>
+            <th>Ação</th>
+        </tr>
+        <% pratos.forEach(item => { %>
+        <tr>
+            <td><%= item.idprato %></td>
+            <td><%= item.nome %></td>
+            <td><%= item.preco %></td>
+            <td>
+                <form id="excluir" action="/pratos/excluir/<%= item.idprato %>" method="POST" style="display: inline;">
+
+                    <button type="submit" class="action-button">Excluir</button>
+
+                </form>
+
+                <a href="/pratos/editar/<%= item.idprato %>">
+                    <button class="action-button edit">Editar</button>
+                </a>
+                
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+    
+    <script src="/script/script.js"></script>
+</body>
+
+</html>

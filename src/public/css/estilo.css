@@ -1,0 +1,264 @@
+/* Define um estilo básico para o corpo da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/* Estiliza os links dentro dos botões */
+button a {
+    font-weight: 200;
+    text-decoration: none;
+}
+
+button a {
+    text-decoration: underline;
+}
+/*  Estiliza a barra horizontal  */
+.button-bar {
+    display: flex;
+    align-items: center;
+    /* Alinha os botões verticalmente   */
+}
+
+#excluir {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#excluir button {
+    background-color: red;
+    padding: 10px 20px;
+    /* Aumenta o tamanho do botão */
+    border: solid black 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    /* / Aumenta o tamanho da fonte / */
+     margin: 0;
+     /* / Remove a margem para alinhar o botão com a borda do formulário */
+}
+
+.action-button.edit {
+    background-color: blue;
+    /* / Cor do botão Editar  */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid black 1px;
+    margin-left: 20px;
+}
+.action-button.edit:hover{
+    background-color: rgb(0, 102, 255);}
+
+.action-button {
+    opacity: 0.8;
+    /* Leve transparência no hover */
+}
+
+body.light-theme {
+    background-color: white;
+}
+body.light-theme button,
+body.light-theme .button-bar,
+body.light-theme form input[type='submit'],
+body.light-theme #excluir button,
+body.light-theme button a{
+    color: white;
+}
+
+
+body.dark-theme {
+    background-color: black;
+}body.dark-theme button,
+body.dark-theme .button-bar,
+body.dark-theme form input[type='submit'],
+body.dark-theme #excluir button,
+body.dark-theme button a {
+    color: black;
+}
+
+
+
+
+/* Estiliza o título */
+h1 {
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+/*Estiliza a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* / Distribui os itens na barra de navegação /  */
+    align-items: center;
+    width: 80%;
+    /*  Define a largura da barra de navegação */
+    margin-bottom: 20px;
+}
+
+/* /* Estiliza os parágrafos / */
+p {
+    font-size: 1.2em;
+    margin: 0;
+     /* Remove margens para alinhar corretamente  */
+    text-align: center;
+     /* Centraliza o texto   */
+    color: #007bff;
+}
+
+
+
+
+
+
+/* Estiliza os botões */
+
+button {
+    background-color: #0056b3;
+}
+button:hover{
+    background-color: #1f73cd;
+}
+
+
+/* Estiliza o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estiliza os rótulos */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estiliza os inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0f7fa;
+}
+
+/* Estiliza o botão de submit dentro do formulário */
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+
+/* Estiliza a tabela */
+table {
+    width: 50%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estiliza os cabeçalhos da tabela */
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #8b88a3;
+}
+
+
+/* Estiliza as células da tabela */
+table tr {
+    background-color: #9b9494;
+}
+
+table td form {
+    display: inline;
+}
+
+table td .action-button {}
+
+/* Estiliza o botão de excluir no formulário com id "excluir" */
+#excluir {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#excluir button {
+    background-color: red;
+    padding: 10px 20px;
+    /* Aumenta o tamanho do botão */
+    border: solid black 1px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    /* / Aumenta o tamanho da fonte / */
+     margin: 0;
+     /* / Remove a margem para alinhar o botão com a borda do formulário */
+}
+
+#excluir button:hover {
+    background-color: rgb(237, 85, 85);}

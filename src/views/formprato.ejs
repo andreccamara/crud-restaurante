@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+
+</head>
+
+<body>
+    <a href="/main"><h1>SGE</h1></a> 
+    <form action="/pratos/createPrato" method="post">
+        <label for="name"> Nome do prato:</label>
+        <input type="text" name="nome" required>
+        <label for="preco"> preco:</label>
+        <input type="number" step="0.01" min="0" name="preco" required>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+<script src="/script/script.js"></script>
+
+</html>
